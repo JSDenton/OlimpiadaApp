@@ -3,6 +3,8 @@
 Ta aplikacja służy do organizacji olimpiady sportowej w Zagłębiowskim Klubie Oyama Karate.
 Jest ona przeznaczona do użytku wewnętrznego.
 
+## Uruchomienie kodu
+
 Żeby uruchomić program na swojej maszynie należy pobrać kod (najlepiej przez zipa i rozpakować - zielony przycisk Code, i po rozwinięciu go, wybrać "Download zip"/"Pobierz zip").  
 Wymagane jest posiadanie programu **Node**, najlepiej w najnowszej wersji (v20.11).  
 Następnie w terminalu wpisać `npm install` żeby zainstalować wszystkie potrzebne dependencje.  
