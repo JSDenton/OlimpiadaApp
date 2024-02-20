@@ -5,11 +5,27 @@ TODO:
   - użytkownicy - edytorzy:
    - pola: ID, login, hasło, Imię, nazwisko, (ADMIN?), e-mail
   - uczestnicy:
-   - pola: ID, Imię, nazwisko, sekcja, konkurencja, (FK) edycja olimpiady (rok/sezon)
+   - pola: ID, Imię, nazwisko, sekcja, grupa, (FK) edycja olimpiady (rok/sezon)
   - wyniki:
    - pola: ID, ID użytkownika, ID konkurencji, wynik
   konkurencje:
    - pola: ID, rodzaj danych (UOM - unit of measure), czy aktywna
+
+
+2.1. Firebase'owa baza danych:
+   - tabela1 - struktura pod konkurencje (przegląd uczestników):
+     - edycja olimpiady (ID)
+      - Sekcje (ID)
+       - uczestnicy (ID)
+         - konkurencje 
+   - tabela2 - struktura pod edycje olimpiady
+     - edycja olimpiady
+       - nazwa
+       - ID
+   - tabela3 - struktura pod sekcje:
+     - sekcja
+
+
 3. Działanie:
  - sesja (zapamiętywanie hasła na urządzeniu (cookiesy?))
  - wszyscy mogą przeglądać sobie dane, ale modyfikować mogą jedynie osoby zalogowane (a więc uprawnione do edycji)
@@ -36,5 +52,5 @@ PYTANIA:
 
 - sprawdzanie obecności w finale - przycisk LISTA OBECNOŚCI całościowy + w poszczególnych kategoriach
 - edycja tylko w trakcie trwania danej sekcji/finału (ew. alert na maila, czy coś)
-- dla konkurencji thebestof (rzut itp) jeden czy dwa wyniki (prompty)
+- dla konkurencji thebestof (rzut, skok itp) jeden czy dwa wyniki (prompty)
 - co w przypadku remisu w finale? - porównywarka konkretnych uczestników?
