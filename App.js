@@ -1,36 +1,19 @@
-import { StatusBar } from 'expo-status-bar';
-import { FlatList, Text, View } from 'react-native';
-import { styles } from './styles/styles.js';
-import { Element} from './components/listElement.js'
+import * as React from 'react'
+import { NavigationContainer } from '@react-navigation/native';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import Home from './components/Home.js'
+import Sections from './components/Sections.js'
 
-export default function MainScreen() {
 
-  return (
-    <View style={styles.container}>
-      <FlatList data={dataTest} renderItem={({item}) => <Element item={item.key}/> }/>
-    </View>
-  );
-}
+const Stack = createNativeStackNavigator();
 
-const dataTest = [
-         {key: 'Devin'},
-         {key: 'Dan'},
-         {key: 'Dominic'},
-         {key: 'Jackson'},
-         {key: 'James'},
-         {key: 'Joel'},
-         {key: 'John'},
-         {key: 'Jillian'},
-         {key: 'Jimmy'},
-         {key: 'Julie'}
-       ];
-
-/*const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: '#fff',
-        alignItems: 'center',
-        justifyContent: 'center',
-        color: '#f0f'
-      },
-})*/
+export default function App() {
+    return(
+        <NavigationContainer>
+            <Stack.Navigator>
+                <Stack.Screen name="Edycje" component={Home}/>
+                <Stack.Screen name="Sekcje" component={Sections}/>
+            </Stack.Navigator>
+        </NavigationContainer>
+    );
+};
