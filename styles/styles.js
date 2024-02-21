@@ -26,9 +26,30 @@ const elemListTouchStyle = {
     borderRadius: 5
 }
 
+const headerStyle = {
+    headerStyle:{backgroundColor:'#222'},
+    headerTintColor: '#ddd',
+    headerTitleStyle:{color:'#ddd'},
+}
+
+const loginButtonStyle = {
+    backgroundColor : "#f00",
+    color:"#ddd",
+    padding:5
+}
+
+const loginInput = {
+    backgroundColor:'white',
+    padding:10,
+    color:'black',
+    width:'80%'
+}
 
 export const styles = {
     container : containerStyle,
     text: textStyle,
-    elemListTouch: elemListTouchStyle
+    elemListTouch: elemListTouchStyle,
+    header: headerStyle,
+    loginButton: loginButtonStyle,
+    logInInput: loginInput
 }
