@@ -31,15 +31,15 @@ TODO:
  - wszyscy mogą przeglądać sobie dane, ale modyfikować mogą jedynie osoby zalogowane (a więc uprawnione do edycji)
  - pierwszy ekran pokazuje olimpiady przeszłe + aktywną
  - drugi ekran - lista sekcji (FINAŁ jako ostatni etap) ?+ overview całego klubu (lista wszystkich sekcji - takie podsumowanie)
-  ?- jeżeli użytkownik jest zalogowany -> pokazuje się przycisk "Dodaj uczestnika"
+    ?- jeżeli użytkownik jest zalogowany -> pokazuje się przycisk "Dodaj uczestnika"
  - trzeci ekran:
-  - lista kategorii
+    - lista kategorii
  - czwarty ekran:
-  - jeżeli użytkownik niezalogowany -> ogląd wyników (tabelka)
-  - zalogowany użytkownik -> lista konkurencji ORAZ (obok/poniżej) przycisk "Dodaj uczestnika" z uzupełnioną sekcją
-   - po kliknięciu na konkurencję -> lista dzieciaków i ich wyników + przycisk ROZPOCZNIJ/KONTYNUUJ KONKURENCJĘ (KONTYNUUJ tylko jeżeli już jakieś dzieci mają wyniki, a niektóre nie)
+    - jeżeli użytkownik niezalogowany -> ogląd wyników (tabelka)
+    - zalogowany użytkownik -> lista konkurencji ORAZ (obok/poniżej) przycisk "Dodaj uczestnika" z uzupełnioną sekcją
+    - po kliknięciu na konkurencję -> lista dzieciaków i ich wyników + przycisk ROZPOCZNIJ/KONTYNUUJ KONKURENCJĘ (KONTYNUUJ tylko jeżeli już jakieś dzieci mają wyniki, a niektóre nie)
  - dodawanie użytkownika:
-  - dane - Imię, nazwisko, sekcja, kategoria (kl. 0-1, 2-3, 4-5, 6-7, 8?)
+    - dane - Imię, nazwisko, sekcja, kategoria (kl. 0-1, 2-3, 4-5, 6-7, 8?)
  - z każdego ekranu, jest możliwość cofnięcia się do poprzedniego
  - panel ADMINa, który może edytować konkurencje/kategorie/sekcje
 
