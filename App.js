@@ -1,11 +1,12 @@
 import * as React from 'react'
 import { NavigationContainer } from '@react-navigation/native';
-import { Button } from 'react-native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Home from './components/Home.js'
 import Sections from './components/Sections.js'
 import LogIn from './components/LogIn.js'
-import {LogInButton} from './components/LogInButton.js'
+import LogInButton from './components/LogInButton.js'
+import Categories from './components/Categories.js'
+import Section from './components/Section.js'
 import {styles} from './styles/styles.js'
 
 
@@ -22,11 +23,19 @@ export default function App() {
                     headerRight: ()=>(<LogInButton />)
                     }}
                 />
-                <Stack.Screen name="Sekcje" component={Sections}
+                <Stack.Screen name="Sections" component={Sections}
                 options={{title: 'Sekcje',
                     headerRight: ()=>(<LogInButton />)
                 }}/>
                 <Stack.Screen name="LogIn" component={LogIn} options={{title:"logowanie"}}/>
+                <Stack.Screen name="Categories" component={Categories}
+                                            options={{title: 'Kategorie',
+                                                headerRight: ()=>(<LogInButton />)
+                                            }}/>
+                <Stack.Screen name="Section" component={Section}
+                                            options={{title: 'Uczestnicy',
+                                                headerRight: ()=>(<LogInButton />)
+                                            }}/>
             </Stack.Navigator>
         </NavigationContainer>
     );

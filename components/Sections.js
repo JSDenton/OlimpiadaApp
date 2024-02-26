@@ -7,7 +7,7 @@ export default function Sections() {
 
   return (
     <View style={styles.container}>
-      <FlatList data={dataTest} renderItem={({item}) => <Element item={item.key}/> }/>
+      <FlatList data={dataTest} renderItem={({item}) => <Element item={item.key} nextScreen='Categories'/> }/>
     </View>
   );
 }

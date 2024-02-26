@@ -1,15 +1,22 @@
 import {StyleSheet} from 'react-native'
 
+const border_radius = 10;
+
+
 const containerStyle = {
     flex: 1,
     backgroundColor: '#111',
     alignItems: 'center',
     justifyContent: 'center',
+        borderWidth:1,
+        borderColor:'#222',
+        borderStyle:'solid'
 };
 
 const textStyle = {
     color:'#ddd',
-    fontSize: 20
+    fontSize: 20,
+    flexWrap:'wrap'
 }
 
 const elemListTouchStyle = {
@@ -23,7 +30,7 @@ const elemListTouchStyle = {
     //alignItems: 'center',
     paddingLeft: 25,
     justifyContent: 'center',
-    borderRadius: 5
+    borderRadius: border_radius
 }
 
 const headerStyle = {
@@ -35,7 +42,11 @@ const headerStyle = {
 const loginButtonStyle = {
     backgroundColor : "#f00",
     color:"#ddd",
-    padding:5
+    padding:5,
+    borderRadius:border_radius,
+    borderWidth:1,
+    borderColor:'#222',
+    borderStyle:'solid'
 }
 
 const loginInput = {
@@ -45,11 +56,38 @@ const loginInput = {
     width:'80%'
 }
 
+const rowStyle = {
+
+    flexDirection:'row',
+}
+
+const cellStyle = {
+    borderWidth:1,
+    borderColor:'white',
+    borderStyle:'solid',
+    width:120,
+    paddingLeft:10,
+}
+
+const headerRowStyle = {
+    flexDirection:'row',
+    backgroundColor:"#2a2a2a"
+}
+
+const boldTextStyle = {
+    ...textStyle,
+    fontWeight:'bold'
+}
+
 export const styles = {
     container : containerStyle,
     text: textStyle,
     elemListTouch: elemListTouchStyle,
     header: headerStyle,
     loginButton: loginButtonStyle,
-    logInInput: loginInput
+    logInInput: loginInput,
+    row: rowStyle,
+    cell: cellStyle,
+    headerRow: headerRowStyle,
+    boldText: boldTextStyle
 }

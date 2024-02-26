@@ -1,9 +1,9 @@
 import { StatusBar } from 'expo-status-bar';
-import { Button, View, TouchableHighlight, Text } from 'react-native';
+import { View, TouchableHighlight, Text } from 'react-native';
 import { styles } from '../styles/styles.js';
 import {NavigationContainer, useNavigation} from '@react-navigation/native';
 
-export const LogInButton = (props) => {
+export default function LogInButton (props)  {
 const navigation = useNavigation();
   return (
     <View>

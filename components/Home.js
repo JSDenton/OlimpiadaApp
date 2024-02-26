@@ -6,7 +6,7 @@ import { Element} from './listElement.js'
 export default function Home() {
   return (
     <View style={styles.container}>
-      <FlatList data={dataTest} renderItem={({item}) => <Element item={item.key} nextScreen='Sekcje'/> }/>
+      <FlatList data={dataTest} renderItem={({item}) => <Element item={item.key} nextScreen='Sections'/> }/>
     </View>
   );
 }
