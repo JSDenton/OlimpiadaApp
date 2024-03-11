@@ -92,7 +92,7 @@ export const Table = (props) => {
     let textStyle = props.header ? styles.boldText : styles.text;
     return(
             <View style={styles.cell}>
-                <Text style={textStyle} allowFontScaling={true}>{item.key}</Text>
+                <Text style={textStyle} key={item.key} allowFontScaling={true}>{item.key}</Text>
             </View>
         )
 
